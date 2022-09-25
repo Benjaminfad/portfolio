@@ -1,0 +1,250 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>portfolio</title>  
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <P class="logo-text anim"><span>M</span>oyin.</P>
+            <ul id="sidemenu" class="anim">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <img src="close.png" class="clone-icon" onclick="closemenu()">
+            </ul>
+            <img src="home.png" class="clone-icon" onclick="openmenu()">
+
+        </nav>
+        <div class="header-text">
+            <p class="anim">Web Developer</p>
+            <h1 class="anim">Hi, I'm <span>Moyin</span><br>Fadipe from Nigeria</h1>
+        </div>
+    </div>
+    <!--About section-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="user.png">
+                </div> 
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1>
+                   <p>My name is Moyinoluwa Benjamin Fadipe , I am a Web Developer from Nigeria . My area of specialization is mainly on 
+                    the front-end aspect of web development, over the years i have gained skills in some basic programming languages , which includes 
+                    HTML(Hypertext Markup Language) CSS(Cascading Style Sheet) JS(Javascript) And Frameworks like Bootstrap,ReactJS . I also have skills and knowledge on the usage of 
+                    this various IDE workspace such as Vscode(Visual Studio Code),Sublime Text and Eclispe. 
+                   </p>
+
+                   <div class="tab-title">
+                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                   <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   <p class="tab-links" onclick="opentab('education')">Education</p>   
+                   </div>
+
+                   <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                           <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                           <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                           <li><span>App Development</span><br>Building Android/IOS apps</li>
+                       </ul>
+                   </div>
+                    <div class="tab-contents" id="experience">
+                       <ul>
+                           <li><span>2022 - Current</span><br>ALX Software Engineering Training</li>
+                           <li><span>2020 - 2021</span><br>Designing Web/App interfaces</li>
+                           <li><span>2019 - 2019</span><br>Industrial Trainee at StandHope Technologies</li>
+                       </ul>
+                   </div>
+                    <div class="tab-contents" id="education">
+                       <ul>
+                           <li><span>2022 - 2022 </span><br>Front-End Web Development Certification Course in HTML,CSS and Javascript 
+                             (APTLearn)</li>
+                           <li><span>2016 - 2021</span><br>Federal University Oye-Ekiti, Ekiti-State (BSC Accouting)</li>
+                           <li><span>2011 - 2016</span><br>SSCE(NECO)Business (FSTC IJEBU IMUSHIN) <br>
+                           WAEC, Business(Standhope International College Ibadan , Oyo State)</li>
+                       </ul>
+                   </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+     <!-- Services -->
+     <div id="services">
+        <div class="container">
+             <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2> < / >   </h2>
+                   <h2>Web Design</h2>
+                   <p>With my experience and skills , I can design the
+                     frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
+                   <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2> < / >   </h2>
+                   <h2>Web Development</h2>
+                   <p>With my experience and skills , I can design the
+                     frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
+                   <a href="#">Learn More</a>
+                </div>
+                <div>
+                     <h2> < / >   </h2>
+                   <h2>Web Design</h2>
+                   <p>With my experience and skills , I can design the
+                     frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
+                   <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!--portfolio-->
+     <div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+        <div class="work">
+           <img src="uni.jpeg">
+           <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The app connects you to the talented people aroundmthe world.<br>
+            Download it from the App store or play store.</p>
+            <a href="#"> < / ></a>
+           </div>
+        </div>
+        <div class="work">
+           <img src="business.jpeg" class="business">
+            <div class="layer">
+            <h3>E-commerce website</h3>
+            <p>This website connects you to an e-commerce entity solely for the purpose of bringing business enthusiast together to create great business plan.</p>
+            <a href="website.html" target="_blank"> < / ></a>
+           </div>
+        </div>
+         <div class="work">
+           <img src="uni.jpeg">
+            <div class="layer">
+            <h3>University website </h3>
+            <p>This website connects you to Winters university and shows you the in and out of it.</p>
+            <a href="index.html" target="_blank"> < / ></a>
+        </div>
+        </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+     </div>
+     </div>
+
+     <!--contact-->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+             <h1 class="sub-title2">Contact Me</h1>
+             <p> <img src="inbox.png" class="inbox">   fadipemoyinoluwa2016@gmail.com</p>
+             <p> <img src="phone.png" class="phone"> 07067066224</p>
+             <div class="social-icons">
+                <a href=""><img src="instalogo.jpg"></a>
+                <a href=""><img src="ldlogo.jpg"></a>
+                <a href=""><img src="twitterlogo.jpg"></a>
+                <a href=""><img src="whatsapplogo.jpg"></a>
+             </div>
+             <a href="moyinCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+             <div class="contact-right">
+                <form id="myForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+              <p>Copyright  © Moyin. All Rights Reserved</p>
+        </div>     
+     </div>
+
+    
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+           sidemenu.style.right = "0";
+
+     }
+    function closemenu(){
+           sidemenu.style.right = "-200px";
+
+     }
+
+</script>
+
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">      (function () {
+        emailjs.init("AqcwFAWOQMHZsaGmS");
+      })();
+    </script>
+
+
+     <script>
+        
+        // listen to the form submission
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_us46k6q";
+            const templateID = "template_el1r8z8";
+  
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      </script>
+
+
+</body>
+</html>
