@@ -99,7 +99,8 @@ nav ul li a:hover::after {
 /* ---- About ----*/
 #about {
     padding: 200px 0;
-    color: #ababab;
+    color: #fff;
+  
 
 }
 
@@ -112,16 +113,19 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    margin-top: 10rem;
 }
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
+    height: 50vh;
+   
 
 }
 
 .about-col-2 {
     flex-basis: 60%;
+    margin-top: 10rem;
 }
 
 .sub-title{
@@ -293,17 +297,18 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #238680;
+    border: 1px solid #485d5b  ;
     padding: 14px 50px;
-    border-radius: 6px;
+    border-radius: 30px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
-    background: #238680;;
+    transition: 0.8s;
+    background: #485d5b;
 
 }
 .btn:hover{
     background: #238680;
+     border: 1px solid #238680;
 }
 /*-----contact-----*/
 .social-icons img{
@@ -341,7 +346,11 @@ nav ul li a:hover::after {
 }
 .btn.btn2{
     display: inline-block;
-    background: #238680;;
+    background: #485d5b;
+    border-radius: 30px;
+}
+.btn.btn2:hover{
+    background: #238680;
 }
 .contact-right form{
     width: 100%;
