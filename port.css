@@ -62,16 +62,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after {
-    content: '';
-    bottom: -6px;
-    transition: 0.5s;
-    background: #238680;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-}
+
 
 nav ul li a:hover::after {
     width: 100%;

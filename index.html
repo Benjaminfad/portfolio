@@ -1,250 +1,323 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="port.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>portfolio</title>  
-</head>
-<body>
- <div id="header">
-    <div class="container">
-        <nav>
-            <P class="logo-text anim"><span>B</span>enjamin.</P>
-            <ul id="sidemenu" class="anim">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <img src="close.png" class="clone-icon" onclick="closemenu()">
-            </ul>
-            <img src="home.png" class="clone-icon" onclick="openmenu()">
 
-        </nav>
-        <div class="header-text">
-            <p class="anim">Web Developer</p>
-            <h1 class="anim">Hi, I'm <span>Benjamin</span><br>Fadipe from Nigeria</h1>
-        </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="port.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>portfolio</title>
+</head>
+
+<body>
+
+
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <P class="logo-text anim"><span>B</span>enjamin.</P>
+        <ul id="sidemenu" class="anim">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <img src="close.png" class="clone-icon" onclick="closemenu()">
+        </ul>
+        <img src="home.png" class="clone-icon" onclick="openmenu()">
+
+      </nav>
+      <div class="header-text">
+        <p class="anim">Web Developer</p>
+        <h1 class="anim">Hi, I'm <span>Benjamin</span><br>Fadipe from Nigeria</h1>
+      </div>
+    </div>
     </div>
     <!--About section-->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                <img src="HeroImg.png">
-                </div> 
-                <div class="about-col-2">
-                   <h1 class="sub-title">About Me</h1>
-                   <p>My name is Moyinoluwa Benjamin Fadipe , I am a Web Developer from Nigeria . My area of specialization is mainly on 
-                    the front-end aspect of web development, over the years i have gained skills in some basic programming languages , which includes 
-                    HTML(Hypertext Markup Language) CSS(Cascading Style Sheet) JS(Javascript) And Frameworks like Bootstrap,ReactJS,NextJS and VueJS. 
-                    I am also farmiliar with working in the Git evnvironment by using the terminal,can work with the Agile method and operate Servers in cloud services like AWS and MicrosoftAzure.
-                     
-                   </p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="HeroImg.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>My name is Moyinoluwa Benjamin Fadipe , I am a Web Developer from Nigeria . My area of specialization is
+              mainly on
+              the front-end aspect of web development, over the years i have gained skills in some basic programming
+              languages , which includes
+              HTML(Hypertext Markup Language) CSS(Cascading Style Sheet) JS(Javascript) And Frameworks like
+              Bootstrap,ReactJS,NextJS and VueJS.
+              I am also farmiliar with working in the Git evnvironment by using the terminal,can work with the Agile
+              method and operate Servers in cloud services like AWS and MicrosoftAzure.
 
-                   <div class="tab-title">
-                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                   <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                   <p class="tab-links" onclick="opentab('education')">Education</p>   
-                   </div>
+            </p>
 
-                   <div class="tab-contents active-tab" id="skills">
-                       <ul>
-                           <li><span>REACTJS</span><br>This javascript framework can be used to create the User-interface of a web application.
-                           It can also be used to create key functions in application. Unlike basic HTML and CSS , React comes with a bundle of packages which makes coding easy.
-                           things like routes , links , image optimization and so much more</li>
-                           <li><span>NEXTJS</span><br>NextJS is a React framework which is also used in creating the User-interface of web application.
-                           Next</li>
-                           <li><span>HTML and CSS</span><br>Designing Web/App interfaces using basic html and css </li>
-                       </ul>
-                   </div>
-                    <div class="tab-contents" id="experience">
-                       <ul>
-                           <li><span>2022 - 2023</span><br>
-                           Einis Technology Ltd<br> 
-                          <span>Front-End Developer</span><br>
-                          <p> Building responsive web applications using Reactjs and Nextjs.</p><br>
-                          <p>Working with team of developers in building the CANADA FREELANCERS website : A website where freelancers residing in canada can find jobs</p><br>
-                          <p>Enhancing developer experiences by receiving hints and notes from senior developers</p>
-                         </li>
-
-                           <li><span>2022 - 2022</span><br>
-                            ALX Software Engineering Training<br>
-                            <span>Software-Engineering student</span><br>
-                            <p>Working with open source platforms like GitHub</p><br>
-                            <P>Using basic shell navigation commands to carry out projects across servers</P><br>
-                            <p> Working with ssh clients softwares like Gitbash, mobaxterm etc</p>
-                          </li>
-
-                           <li><span>2019 - 2019</span><br>
-                            StandHope Technologies<br>
-                            <span>Industrial Traniee</span><br>
-                            <p>Built  custom HTML and CSS website with content management tools like wordpress and wix </p><br>
-                            <P>created graphics design for company needs</P><br>
-                            <p></p>
-
-                          </li>
-                       </ul>
-                   </div>
-                    <div class="tab-contents" id="education">
-                       <ul>
-                           <li><span>2022 - 2022 </span><br>Front-End Web Development Certification Course in HTML,CSS and Javascript 
-                             (APTLearn)</li>
-                           <li><span>2016 - 2021</span><br>Federal University Oye-Ekiti, Ekiti-State (BSC Accouting)</li>
-                           <li><span>2011 - 2016</span><br>SSCE(NECO)Business (FSTC IJEBU IMUSHIN) <br>
-                           WAEC, Business(Standhope International College Ibadan , Oyo State)</li>
-                       </ul>
-                   </div>
-                </div> 
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>REACTJS</span><br>This javascript framework can be used to create the User-interface of a web
+                  application.
+                  It can also be used to create key functions in application. Unlike basic HTML and CSS , React comes
+                  with a bundle of packages which makes coding easy.
+                  things like routes , links , image optimization and so much more</li>
+                <li><span>NEXTJS</span><br>NextJS is a React framework which is also used in creating the User-interface
+                  of web application.
+                  Next</li>
+                <li><span>HTML and CSS</span><br>Designing Web/App interfaces using basic html and css </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - 2023</span><br>
+                  Einis Technology Ltd<br>
+                  <span>Front-End Developer</span><br>
+                  <p> Building responsive web applications using Reactjs and Nextjs.</p><br>
+                  <p>Working with team of developers in building the CANADA FREELANCERS website : A website where
+                    freelancers residing in canada can find jobs</p><br>
+                  <p>Enhancing developer experiences by receiving hints and notes from senior developers</p>
+                </li>
+
+                <li><span>2022 - 2022</span><br>
+                  ALX Software Engineering Training<br>
+                  <span>Software-Engineering student</span><br>
+                  <p>Working with open source platforms like GitHub</p><br>
+                  <P>Using basic shell navigation commands to carry out projects across servers</P><br>
+                  <p> Working with ssh clients softwares like Gitbash, mobaxterm etc</p>
+                </li>
+
+                <li><span>2019 - 2019</span><br>
+                  StandHope Technologies<br>
+                  <span>Industrial Traniee</span><br>
+                  <p>Built custom HTML and CSS website with content management tools like wordpress and wix </p><br>
+                  <P>created graphics design for company needs</P><br>
+                  <p></p>
+
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 - 2022 </span><br>Front-End Web Development Certification Course in HTML,CSS and
+                  Javascript
+                  (APTLearn)</li>
+                <li><span>2020 - 2022 </span><br>Espam Formation University Cotonou,(Bsc Accounting)</li>
+                <li><span>2016 - 2020</span><br>Federal University Oye-Ekiti, Ekiti-State (Accouting)</li>
+                <li><span>2011 - 2016</span><br>SSCE(NECO)Business (FSTC IJEBU IMUSHIN) <br>
+                  WAEC, Business(Standhope International College Ibadan , Oyo State)</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-     <!-- Services -->
-     <div id="services">
-        <div class="container">
-             <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2> < / >   </h2>
-                   <h2>Web Design</h2>
-                   <p>With my experience and skills , I can design the
-                     frontend section of a webpage or website using colors,buttons,forms,pictures and videos</p>
-                   <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <h2> < / >   </h2>
-                   <h2>Web Development</h2>
-                   <p>With my experience and skills , I can build website applications using Reactjs and Nextjs
-                    which will give your website a fast and modern look
-                     </p>
-                   <a href="https://nextjs.org/">Learn More</a>
-                </div>
-                <div>
-                     <h2> < / >   </h2>
-                   <h2>Web Design</h2>
-                   <p>With my experience and skills , I can design the
-                     frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
-                   <a href="#">Learn More</a>
-                </div>
-            </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>
+              <i class="fa-solid fa-code fa-bounce"></i>
+            </h2>
+            <h2>Web Design</h2>
+            <p>With my experience and skills , I can design the
+              frontend section of a webpage or website using colors,buttons,forms,pictures and videos</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>
+              <i class="fa-solid fa-layer-group fa-bounce"></i>
+            </h2>
+            <h2>Web Development</h2>
+            <p>With my experience and skills , I can build website applications using Reactjs and Nextjs
+              which will give your website a fast and modern look
+            </p>
+            <a href="https://nextjs.org/">Learn More</a>
+          </div>
+          <div>
+            <h2>
+              <i class="fa-solid fa-object-ungroup fa-bounce"></i>
+            </h2>
+            <h2>Web Design</h2>
+            <p>With my experience and skills , I can design the
+              frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
 
-     <!--portfolio-->
-     <div id="portfolio">
-     <div class="container">
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
-        <div class="work">
-           <img src="uni.jpeg">
-           <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you to the talented people aroundmthe world.<br>
-            Download it from the App store or play store.</p>
-            <a href="https://winters-university.netlify.app/" target="_blank" > < / ></a>
-           </div>
-        </div>
-        <div class="work">
-           <img src="shop.png" class="business">
+          <div class="work">
+            <img src="uni.jpeg">
             <div class="layer">
-            <h3>E-commerce website</h3>
-            <p>This website connects you to an e-commerce entity solely for the purpose of bringing business enthusiast together to create great business plan.
-              The mobile view for this website is currently ongoing constuction
-            </p>
-            <a href="https://shopinsideout.netlify.app/" target="_blank"> < / ></a>
-           </div>
-        </div>
-         <div class="work">
-           <img src="canada.png">
+              <h3>University website</h3>
+              <p>This web app connects you to the LandingPage of a university website .<br>
+              </p>
+              <a href="https://winters-university.netlify.app/" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="shop.png" class="business">
             <div class="layer">
-            <h3>Canadafreelancers</h3>
-            <p>This website connects freelancers in the Canada area to potential Employers.
-              This web application is a work in progress
-            </p>
-            <a href="" target="_blank"> < / ></a>
-        </div>
-        </div>
+              <h3>E-commerce website</h3>
+              <p>This website connects you to an e-commerce entity named Shopinsideout ,An online Store where you can
+                buy t-shirts of all kinds.
+                The mobile view for this website is currently ongoing constuction
+              </p>
+              <a href="https://shopinsideout.netlify.app/" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="canada.png">
+            <div class="layer">
+              <h3>Canadafreelancers</h3>
+              <p>This website connects freelancers in the Canada area to potential Employers.
+                This web application is a work in progress , it was built using NEXTJS
+              </p>
+              <a href="" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Dashboard.png">
+            <div class="layer">
+              <h3>dashboard</h3>
+              <p>This website connects you to the dashboard page of a company called reacthq,
+                this web application is still a work in progress but you can take a look at it
+                The web application was built using reactjs
+              </p>
+              <a href="https://reacthqdashboard.netlify.app/" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Screenshot 2023-04-19 233828.png">
+            <div class="layer">
+              <h3>LandingPage</h3>
+              <p>This connects you to the LandingPage of an IT company , you can checkout the UI by clicking on the link
+                this web application was built using reactjs
+              </p>
+              <a href="https://fadipelandingpage.netlify.app/" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="kraftLondon.png">
+            <div class="layer">
+              <h3>kraftlondon</h3>
+              <p>This website connects you to an IT company , built with html,css and javascript
+              </p>
+              <a href="https://kraftlondon.netlify.app/" target="_blank">
+                < />
+              </a>
+            </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
-     </div>
-     </div>
+      </div>
+    </div>
 
-     <!--contact-->
+    <!--contact-->
 
-     <div id="contact">
-        <div class="container">
-            <div class="row">
-            <div class="contact-left">
-             <h1 class="sub-title2">Contact Me</h1>
-             <p> <img src="inbox.png" class="inbox">   fadipemoyinoluwa2016@gmail.com</p>
-             <p> <img src="phone.png" class="phone"> 07067066224</p>
-             <div class="social-icons">
-                <a href=""><img src="instalogo.jpg"></a>
-                <a href=""><img src="ldlogo.jpg"></a>
-                <a href=""><img src="twitterlogo.jpg"></a>
-                <a href=""><img src="whatsapplogo.jpg"></a>
-                <a href=""><img src="GitHub.png"></a>
-             </div>
-             <a href="https://drive.google.com/file/d/1FCuv3YJAijt-JhJEQICcvZ67TpJTfoAl/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-right">
+            <form id="myForm">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+          <div class="contact-left">
+            <h1 class="sub-title2">Contact Me</h1>
+            <p> <img src="inbox.png" class="inbox"> fadipemoyinoluwa2016@gmail.com</p>
+            <p> <img src="phone.png" class="phone"> 07067066224</p>
+            <div class="social-icons">
+              <a href=""><img src="instalogo.jpg"></a>
+              <a href=""><img src="ldlogo.jpg"></a>
+              <a href=""><img src="twitterlogo.jpg"></a>
+              <a href=""><img src="whatsapplogo.jpg"></a>
+              <a href=""><img src="GitHub.png"></a>
             </div>
-             <div class="contact-right">
-                <form id="myForm">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-            </div>
+            <a href="https://drive.google.com/file/d/1FCuv3YJAijt-JhJEQICcvZ67TpJTfoAl/view?usp=drivesdk" download
+              class="btn btn2">Download CV</a>
+          </div>
         </div>
-        <div class="copyright">
-              <p>Copyright  © Moyin. All Rights Reserved</p>
-        </div>     
-     </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Moyin. All Rights Reserved</p>
+      </div>
+    </div>
 
-    
 
 
-<!-- javascript -->
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+    <!-- javascript -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
+      }
+    </script>
 
-<script>
+    <script>
 
-    var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-     function openmenu(){
-           sidemenu.style.right = "0";
+      function openmenu() {
+        sidemenu.style.right = "0";
 
-     }
-    function closemenu(){
-           sidemenu.style.right = "-200px";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
 
-     }
+      }
 
-</script>
+    </script>
 
 
- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script type="text/javascript">      (function () {
         emailjs.init("AqcwFAWOQMHZsaGmS");
@@ -252,31 +325,32 @@
     </script>
 
 
-     <script>
-        
-        // listen to the form submission
-        document
-          .getElementById("myForm")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-  
-            const serviceID = "service_us46k6q";
-            const templateID = "template_el1r8z8";
-  
-            // send the email here
-            emailjs.sendForm(serviceID, templateID, this).then(
-              (response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                alert("SUCCESS!");
-              },
-              (error) => {
-                console.log("FAILED...", error);
-                alert("FAILED...", error);
-              }
-            );
-          });
-      </script>
+    <script>
+
+      // listen to the form submission
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const serviceID = "service_us46k6q";
+          const templateID = "template_el1r8z8";
+
+          // send the email here
+          emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("SUCCESS!");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("FAILED...", error);
+            }
+          );
+        });
+    </script>
 
 
 </body>
+
 </html>
