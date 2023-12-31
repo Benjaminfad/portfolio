@@ -18,7 +18,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(moyin55.jpg);
+    background-color: #e0dec9;
     background-size: cover;
     background-position: center;
     animation-delay: 0.5s;
@@ -37,14 +37,14 @@ nav {
 }
 
 .logo-text{
-    font-size: 50px;
+    font-size: 30px;
    
 }
 .logo-text .anim{
     animation-delay: 0.5s;
 }
 .logo-text span{
-    color: #238680;
+    color:#032905 ;
 }
 
 nav ul li {
@@ -56,9 +56,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
+    font-weight: 500;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
 }
 
@@ -68,29 +69,45 @@ nav ul li a:hover::after {
     width: 100%;
 
 }
-
+.brick{
+    display: flex;
+    justify-content: space-between;
+}
+.brick img{
+    padding: 60px;
+    border-radius: 6rem;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-
+    
+   
 
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 20px;
+   word-wrap: none;
+    color: #000;
     animation-delay: 0.5s;
 }
 
 .header-text h1 span {
-    color: #238680;
+    color: #032905;
 
+}
+.header-text p{
+    color: #000;
 }
 
 /* ---- About ----*/
+
+
 #about {
     padding: 200px 0;
     color: #fff;
+    background:#050909e4 ;
   
 
 }
@@ -162,6 +179,10 @@ nav ul li a:hover::after {
 .tab-contents.active-tab{
     display: block;
 }
+#about-me{
+   font-size: 250px; 
+}
+
 /* -----------services------------  */
 #services{
     padding: 30px 0;
@@ -171,6 +192,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    cursor: pointer;
 
 
 }
@@ -179,7 +201,7 @@ nav ul li a:hover::after {
 
 }
 .services-list div{
-    background: #262626;
+    background: #fff;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -196,24 +218,29 @@ nav ul li a:hover::after {
     font-size: 30px;
     font-weight: 500;
     margin-bottom:15px;
+    color: #000;
     
 }
 .services-list div p{
     font-size: 17px;
     font-weight:400;
+    color: #000;
     
 
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .services-list div:hover{
-    background:  #238680;
+    background:   #e0dec9;
     transform: translateY(-10px);
+}
+ #right-slide:hover{
+    transform:  translateX(-30px);
 }
 
 /* ----portfolio --- */
@@ -357,6 +384,9 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+#clone-icon2{
+    display: none;
+}
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
@@ -392,7 +422,7 @@ form .btn2{
 @Keyframes moveup{
     100%{
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
 
@@ -403,9 +433,13 @@ nav .clone-icon{
 
 @media only screen and (max-width: 600px){
    #header{
-    background-image: url(moyin562.jpg);
+    background-image:none;
+    background-color: #e0dec9;
 
    }
+   .brick img{
+    display: none;
+}
    .header-text{
     margin-top: 130%;
     font-size: 20px;
@@ -413,19 +447,51 @@ nav .clone-icon{
     bottom: 180px;
 
    }
+   .anim{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveleft 6s linear forwards;
+}
+@Keyframes moveleft{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+   .header-text h1 span{
+     color:#032905;
+   }
    .header-text h1{
-    font-size: 30px;
+    font-size: 52px;
+    color: black;
    }
    .header-text p{
-    font-size: 50px;
+    font-size: 28px;
+    color: #000;
    }
    nav .clone-icon{
     display: block;
-    width: 29px;
-    
+    width: 26px; 
+    position: relative;
+    right: 27px;
+   }
+   #clone-icon2{
+    display: block;
+    width: 26px; 
+    position: relative;
+    right: 27px;
+    top: 14px;
+   }
+   nav #close-icon{
+    width: 18px;
+   }
+   nav .logo-text{
+    display: none;
+    font-size:25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    }
    nav ul{
-    background:#238680 ;
+    background:#050909e4 ;
     position: fixed;
     top: 0;
     right: -200px;
@@ -437,7 +503,11 @@ nav .clone-icon{
    }
    nav ul li{
     display: block;
-    margin: 25px;
+    margin: 35px;
+   }
+   nav ul li a{
+    font-size: 16px;
+    color: #fff;
    }
    nav ul .clone-icon{
      position: absolute;
@@ -467,6 +537,9 @@ nav .clone-icon{
    }
    .copyright{
     font-size: 14px;
+   }
+   #about-me{
+    font-size: 80px;
    }
 }
 #msg{
