@@ -565,3 +565,22 @@ nav .clone-icon{
     margin-top: -40px;
     display: block;
 }
+@media (min-width:600px ) and (max-width: 910px){
+    .brick{
+        display: block;
+    }
+    nav{
+     flex-wrap: nowrap;
+    }
+    .header-text h1{
+        font-size: 60px;
+    }
+    .header-text p{
+        margin-top:5%
+    }
+    .brick img{
+        padding: 0;
+        border-radius: 2rem;
+        margin-top:10%
+    }
+}
