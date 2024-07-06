@@ -20,8 +20,8 @@ body{
     height: 100vh;
     background-color: #e0dec9;
     animation-delay: 0.5s;background-color: #fff;
-    background-image:
-      url(./BGsoon.svg);
+    /* background-image:
+      url(./BGsoon.svg); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 70%;
