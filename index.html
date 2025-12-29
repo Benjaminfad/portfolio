@@ -3,402 +3,1082 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="port.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>portfolio</title>
+  <meta name="description" content="Moyinoluwa Fadipe - Frontend Engineer & Technical Support Specialist with expertise in React, Next.js, TypeScript, and enterprise system support.">
+  <title>Moyinoluwa Fadipe | Frontend Engineer & Technical Support Specialist</title>
+  <link rel="stylesheet" href="port.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-
-
-
   <div id="header">
     <div class="container">
       <nav>
-        <P class="logo-text anim"><span>Benjamin</span>fad.</P>
-        <ul id="sidemenu" class="anim">
+        <a href="#header" class="logo-text">MF<span>.</span></a>
+        <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#ai-workflow">AI Workflow</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#support">Support Work</a></li>
           <li><a href="#contact">Contact</a></li>
-          <img src="close.png" class="clone-icon" id="close-icon" onclick="closemenu()">
+          <li class="mobile-only"><i class="fas fa-times" onclick="closemenu()"></i></li>
         </ul>
-        <i class="fa-solid fa-bars  fa-xl" style="color: #03000a;"  id="clone-icon2" onclick="openmenu()"></i>
-  
-
-
+        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
-      <div class="brick">
-      <div class="header-text">
-        <h1 class="anim">Hi, I'm <span>Benjamin</span><br>Fadipe </h1>
-        <p class="anim">A Front-End Engineer From Nigeria</p>
-       
-      </div>
-      <img src="moyin225.jpg" alt="" class="rotating">
-      </div> 
-    </div>
-    </div>
-    <!--About section-->
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <i class="fa-solid fa-person-circle-question fa-5x" id="about-me"></i>
+      <div class="hero-section">
+        <div class="hero-text">
+          <p class="hero-subtitle anim">Frontend Engineer & Technical Support Specialist</p>
+          <h1 class="anim">Building enterprise applications & <span class="highlight">supporting their success</span></h1>
+          <p class="hero-desc anim">I bridge development and operations by creating robust applications with React/Next.js while ensuring their reliability through technical support, data analysis, and system monitoring.</p>
+          <div class="hero-buttons anim">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1mtioeN9ioDoJjqtDAS8bVjFrxCKklACT/view?usp=sharing" target="_blank" class="btn outline-btn">Download CV</a>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>My name is Moyinoluwa Benjamin Fadipe , I am a Web Developer from Nigeria . My area of specialization is
-              mainly on
-              the front-end aspect of web development, over the years i have gained skills in some basic programming
-              languages , which includes
-              HTML(Hypertext Markup Language) CSS(Cascading Style Sheet) JS(Javascript) And Frameworks like
-              Bootstrap,ReactJS,NextJS and VueJS.
-              I am also familiar with working in the Git environment by using the terminal,can work with the Agile
-              method and operate Servers in cloud services like AWS and MicrosoftAzure.
+          <div class="hero-tech anim">
+            <span>React/Next.js</span>
+            <span>TypeScript</span>
+            <span>AI-Enhanced Dev</span>
+            <span>Azure</span>
+            <span>MySQL</span>
+            <span>AWS</span>
+            <span>React Native</span>
+          </div>
+        </div>
+        <div class="hero-image anim">
+          <div class="image-container">
+            <img src="ben.png" alt="Moyinoluwa Fadipe">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            </p>
-
-            <div class="tab-title">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Profile</h2>
+        <p class="section-subtitle">Frontend Engineer with Technical Support & Data Analysis Expertise</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a Frontend Engineer with complementary expertise in technical support, data analysis, and system monitoring. I specialize in developing enterprise-grade applications using React, Next.js, and TypeScript, while also maintaining proficiency in database management, service monitoring, and data analysis using MySQL, Azure Service Bus, and Excel.</p>
+          
+          <p>My unique value lies in understanding both development and operations - I build applications with supportability in mind and support systems with a developer's perspective. This dual expertise enables me to deliver user-centric solutions that drive operational efficiency and business growth.</p>
+          
+          <div class="stats">
+            <div class="stat">
+              <h3>4+</h3>
+              <p>Enterprise Projects</p>
+            </div>
+            <div class="stat">
+              <h3>500+</h3>
+              <p>Users Supported</p>
+            </div>
+            <div class="stat">
+              <h3>₦1.2B+</h3>
+              <p>Transactions Processed</p>
+            </div>
+            <div class="stat">
+              <h3>95%</h3>
+              <p>Support Resolution Rate</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-skills">
+          <h3>Technical Stack</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4><i class="fas fa-code"></i> Frontend Development</h4>
+              <div class="skill-tags">
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>ReactJS</span>
+                <span>Next.js</span>
+                <span>Vue.js</span>
+                <span>React Native</span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-database"></i> Backend & Data Analysis</h4>
+              <div class="skill-tags">
+                <span>MySQL</span>
+                <span>RESTful APIs</span>
+                <span>Azure Service Bus</span>
+                <span>Postman</span>
+                <span>Excel (Advanced)</span>
+                <span>Data Visualization</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+              <div class="skill-tags">
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>Azure DevOps</span>
+                <span>Vercel</span>
+                <span>Git/GitHub</span>
+                <span>Docker</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-headset"></i> Support & Tools</h4>
+              <div class="skill-tags">
+                <span>Zoho Desk</span>
+                <span>Power Apps</span>
+                <span>System Monitoring</span>
+                <span>Technical Documentation</span>
+                <span>Bug Tracking</span>
+                <span>Agile/Scrum</span>
+              </div>
             </div>
 
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>REACTJS</span><br>This javascript framework can be used to create the User-interface of a web
-                  application.
-                  It can also be used to create key functions in application. Unlike basic HTML and CSS , React comes
-                  with a bundle of packages which makes coding easy.
-                  things like routes , links , image optimization and so much more</li>
-                <li><span>NEXTJS</span><br>NextJS is a React framework which is also used in creating the User-interface
-                  of web application.
-                  Next</li>
-                <li><span>HTML and CSS</span><br>Designing Web/App interfaces using basic html and css </li>
-                <li><span>SHELL NAVIGATION</span><br></li>
-                <li><span>VSCODE</span><br></li>
-                <li><span>GIT/GITHUB</span><br></li>
-                <li><span>WORDPRESS</span><br></li>
-                <li><span>AWS</span><br></li>
-                <li><span>LINUX</span><br></li>
-                <li><span>EMAILJS</span><br></li>
+            <div class="skill-category">
+  <h4><i class="fas fa-robot"></i> AI & Productivity Tools</h4>
+  <div class="skill-tags">
+    <span>Prompt Engineering</span>
+    <span>ChatGPT/Claude</span>
+    <span>DeepSeek</span>
+    <span>GitHub Copilot</span>
+    <span>AI Code Generation</span>
+    <span>Technical Documentation</span>
+    <span>AI-Powered Debugging</span>
+    <span>UI/UX with AI</span>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Experience -->
+  <div id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Building & Supporting Enterprise Applications</p>
+      </div>
+      
+      <div class="timeline">
+        <!-- NEXXA Experience -->
+        <div class="timeline-item">
+          <div class="timeline-date">Dec 2024 – Present</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Hybrid Frontend Engineer & Technical Support Specialist</h3>
+              <div class="company">NEXXA Data Tech Solutions <span class="client">(Client: PZ Cussons Nigeria)</span></div>
+              <div class="project-tag">Sales Force Automation Project</div>
+            </div>
+            <div class="timeline-body">
+              <div class="role-highlights">
+                <div class="highlight-card">
+                  <i class="fas fa-laptop-code"></i>
+                  <h4>Frontend Development</h4>
+                  <ul>
+                    <li>Developed enterprise DMS portal features using React/TypeScript</li>
+                    <li>Implemented role-based access control & dynamic UI components</li>
+                    <li>Optimized performance, reducing load times by 25%</li>
+                    <li>Contributed to Android HHT mobile app for 500+ field reps</li>
+                  </ul>
+                </div>
+                <div class="highlight-card">
+                  <i class="fas fa-chart-line"></i>
+                  <h4>Technical Support & Analysis</h4>
+                  <ul>
+                    <li>Monitored app data using MySQL queries for system performance</li>
+                    <li>Used Azure Service Bus for inter-service communication tracking</li>
+                    <li>Generated Excel reports for actionable business insights</li>
+                    <li>Provided Tier 2 support with 95% resolution rate</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="impact">
+                <h4><i class="fas fa-bullseye"></i> Impact</h4>
+                <p>Supported digital transformation processing <strong>₦1.2B+</strong> in transactions, reduced manual errors by <strong>40%</strong>, and improved operational transparency across <strong>50+</strong> distributor locations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OYASYNC Experience -->
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2024 – Jun 2025</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Frontend/Mobile Engineer</h3>
+              <div class="company">OYASYNC LTD</div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Built <strong>Gassit Corporate</strong> feature for bulk-buying customers with tailored delivery</li>
+                <li>Implemented real-time delivery tracking, improving transparency by <strong>60%</strong></li>
+                <li>Created admin dashboards (Delivery Time Setup, Driver Management, Analytics)</li>
+                <li>Developed <strong>LPG Dashboard</strong> with multi-currency toggle and KPI visualization</li>
+                <li>Improved API integration efficiency by <strong>35%</strong></li>
               </ul>
             </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2023 - 2023</span><br>
-                  TechprosNaija<br>
-                  <span>Front-End Developer</span><br>
-                  <p> Part of the front-end development team of a comprehensive Learning Management System (LMS) </p><br>
-                  <p>Collaborated closely with the backend team to integrate endpoints, ensuring seamless communication between the front-end and backend systems. </p><br>
-                  <p>Implemented responsive and user-friendly interfaces to enhance the overall user experience for both educators and students. </p><br>
-                  <p>Utilized front-end technologies like React and Tailwind to create dynamic and interactive user interfaces. </p><br>
-                  <p>Worked on the integration of the EmailJS SDK which handles the sending of emails to subscribers to enhance the LMS capabilities. </p><br>
-                  <p>Actively participated in code reviews, debugging, and troubleshooting to maintain a high standard of code quality. </p>
+          </div>
+        </div>
 
-                </li>
-                <li><span>2023 - 2023</span><br>
-                   Editfy<br>
-                  <span>Front-End Developer</span><br>
-                  <p> Actively participated in code reviews, debugging, and troubleshooting to maintain a high standard of code quality. </p><br>
-                  <p>Adapted existing systems to create custom and reusable templates, contributing to a more efficient development workflow. </p><br>
-                  <p>Conducted regular code reviews to maintain code quality and adherence to best practices. </p>
-                </li>
-                <li><span>2023 - 2023</span><br>
-                  Hydratech Solutions Ltd<br>
-                  <span>junior Developer</span><br>
-                  <p>Website Development: Built and developed the REACTHQ Dashboard with full-stack application ReactJS, while working with open-source platforms like GitHub which uses version control to help track and manage changes to software code. </p><br>
-                 
-                </li>
-
-                <li><span>2022 - 2023</span><br>
-                  Einis Technology Ltd<br>
-                  <span>Web Developer-Intern</span><br>
-                  <p>Learnt how to use front-end technologies like NEXTJS and REACTJS to build responsive web and mobile applications. </p><br>
-                  <p>Worked across Servers and terminals using the CLI (command line interface) to navigate files/folders to perform actions such as removing,adding,copying,cloning etc.</p><br>
-                  <p>Built the Canada Freelancers web application with team of developers using NEXTJS and REACTJS (A website were freelancers residing in Canada can find jobs). </p>
-                </li>
-
-                <li><span>2022 - 2022</span><br>
-                  ALX Software Engineering Training<br>
-                  <span>Software-Engineering student</span><br>
-                  <p>Working with open source platforms like GitHub</p><br>
-                  <P>Used basic shell navigation commands to carry out projects across servers</P><br>
-                  <p> Worked with ssh clients softwares like Gitbash, mobaxterm etc</p>
-                </li>
-
+        <!-- OYASYNC Support Role -->
+        <div class="timeline-item">
+          <div class="timeline-date">May 2024 – Sep 2024</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>IT Support / Customer Support</h3>
+              <div class="company">OYASYNC LTD</div>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievement-list">
+                <li>Managed customer issues via <strong>Zoho Desk</strong> with 95% resolution rate</li>
+                <li>Evaluated software and reported <strong>50+ bugs</strong> to engineering team</li>
+                <li>Improved customer satisfaction scores by <strong>25%</strong></li>
+                <li>Created comprehensive user documentation and best practice guides</li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2022 - 2022 </span><br>Front-End Web Development Certification Course in HTML,CSS and
-                  Javascript
-                  (APTLearn)</li>
-                <li><span>2019 - 2022 </span><br>Espam Formation University Cotonou,(Bsc Accounting)</li>
-                <li><span>2011 - 2016</span>
-                  WAEC, Business(Standhope International College Ibadan , Oyo State)</li>
-              </ul>
+          </div>
+        </div>
+
+        <!-- Previous Experiences -->
+        <div class="timeline-item">
+          <div class="timeline-date">2023 – 2024</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Previous Engineering Roles</h3>
+            </div>
+            <div class="timeline-body compact">
+              <div class="compact-role">
+                <strong>TECHPROSNAIJA</strong> – Frontend Engineer (Aug-Dec 2023)
+                <p>Developed LMS interfaces with React/Tailwind, integrated EmailJS for communications</p>
+              </div>
+              <div class="compact-role">
+                <strong>EDITFY</strong> – Frontend Developer (Jul-Aug 2023)
+                <p>Built reusable education templates with Next.js/TypeScript, reducing dev time by 30%</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Services -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div id="right-slide">
-            <h2>
-              <i class="fa-solid fa-code fa-bounce"></i>
-            </h2>
-            <h2>Web Design</h2>
-            <p>With my experience and skills , I can design the
-              frontend section of a webpage or website using colors,buttons,forms,pictures and videos</p>
-            <a href="#">Learn More</a>
+  <!-- Projects Section -->
+  <div id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Enterprise Projects</h2>
+        <p class="section-subtitle">Applications driving business transformation</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- PZ Cussons Project -->
+        <div class="project-card featured">
+          <div class="project-badge">Enterprise Scale</div>
+          <div class="project-image">
+            <div class="blurred-overlay">
+              <div class="overlay-content">
+                <h3>PZ Cussons Sales Force Automation</h3>
+                <p>Distribution Management System</p>
+              </div>
+            </div>
           </div>
-          <div  id="right-slide">
-            <h2>
-              <i class="fa-solid fa-layer-group fa-bounce"></i>
-            </h2>
-            <h2>Web Development</h2>
-            <p>With my experience and skills , I can build website applications using Reactjs and Nextjs
-              which will give your website a fast and modern look
-            </p>
-            <a href="https://nextjs.org/">Learn More</a>
-          </div>
-          <div  id="right-slide">
-            <h2>
-              <i class="fa-solid fa-object-ungroup fa-bounce"></i>
-            </h2>
-            <h2>Web Design</h2>
-            <p>With my experience and skills , I can design the
-              frontend section of a webpage or website using color,buttons,forms,pictures and videos</p>
-            <a href="#">Learn More</a>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Sales Force Automation System</h3>
+              <div class="project-client">PZ Cussons Nigeria</div>
+            </div>
+            <div class="project-desc">
+              <p>Enterprise DMS and mobile application supporting nationwide distributor network with real-time sales tracking, inventory management, and route optimization.</p>
+            </div>
+            <div class="project-details">
+              <div class="detail">
+                <i class="fas fa-users"></i>
+                <span>500+ Field Users</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-chart-bar"></i>
+                <span>₦1.2B+ Transactions</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-bolt"></i>
+                <span>25% Faster Load</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>React Native</span>
+              <span>Azure Service Bus</span>
+              <span>MySQL</span>
+            </div>
+            <button class="project-case-study" onclick="openModal('pz-modal')">
+              <i class="fas fa-chart-line"></i> View Impact Metrics
+            </button>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!--portfolio-->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="uni.jpeg">
-            <div class="layer">
-              <h3>University website</h3>
-              <p>This web app connects you to the LandingPage of a university website .<br>
-              </p>
-              <a href="https://winters-university.netlify.app/" target="_blank">
-                < />
+        <!-- Gassit Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="blurred-overlay">
+              <div class="overlay-content">
+                <h3>Gassit Delivery Platform</h3>
+                <p>LPG Delivery Service</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Gassit Delivery Platform</h3>
+              <div class="project-client">Oyasync Ltd</div>
+            </div>
+            <div class="project-desc">
+              <p>Full-stack LPG delivery platform with customer/admin applications featuring real-time tracking, bulk ordering, and comprehensive analytics dashboard.</p>
+            </div>
+            <div class="project-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Real-time Tracking</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-briefcase"></i>
+                <span>Corporate Features</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Analytics Dashboard</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>React Native</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TechProsNaija Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="blurred-overlay">
+              <div class="overlay-content">
+                <h3>Learning Management System</h3>
+                <p>Education Platform</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>LMS Platform</h3>
+              <div class="project-client">TechProsNaija</div>
+            </div>
+            <div class="project-desc">
+              <p>Comprehensive learning management system with course management, progress tracking, and automated communication systems for technical education.</p>
+            </div>
+            <div class="project-details">
+              <div class="detail">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Course Management</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-envelope"></i>
+                <span>Email Automation</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-chart-pie"></i>
+                <span>Progress Analytics</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>EmailJS</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Public Projects -->
+        <div class="project-card public">
+          <div class="project-badge">Public Demo</div>
+          <div class="project-image">
+            <img src="uni.jpeg" alt="University Website">
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>University Website</h3>
+            </div>
+            <div class="project-desc">
+              <p>Responsive university landing page showcasing modern design principles and smooth user interactions.</p>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://winters-university.netlify.app/" target="_blank" class="demo-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
-          <div class="work">
-            <img src="shop.png" class="business">
-            <div class="layer">
-              <h3>E-commerce website</h3>
-              <p>This website connects you to an e-commerce entity named Shopinsideout ,An online Store where you can
-                buy t-shirts of all kinds.
-                The mobile view for this website is currently ongoing construction
-              </p>
-              <a href="https://shopinsideout.netlify.app/" target="_blank">
-                < />
-              </a>
-            </div>
+        </div>
+
+         <div class="project-card public">
+          <div class="project-badge">Public Demo</div>
+          <div class="project-image">
+            <img src="canada.png" alt="University Website">
           </div>
-          <div class="work">
-            <img src="canada.png">
-            <div class="layer">
-              <h3>Canadafreelancers</h3>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Canada Freelancer</h3>
+            </div>
+            <div class="project-desc">
               <p>This website connects freelancers in the Canada area to potential Employers.
-                This web application is a work in progress , it was built using NEXTJS
-              </p>
-              <a href="https://canadafreelancer.netlify.app/" target="_blank">
-                < />
+                This web application is a work in progress , it was built using NEXTJS</p>
+            </div>
+            <div class="project-tech">
+              <span>Nextjs</span>
+              <span>ReactJs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://canadafreelancer.netlify.app/" target="_blank" class="demo-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
-          <div class="work">
-            <img src="Dashboard.png">
-            <div class="layer">
-              <h3>dashboard</h3>
+        </div>
+         <div class="project-card public">
+          <div class="project-badge">Public Demo</div>
+          <div class="project-image">
+            <img src="Dashboard.png" alt="University Website">
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Dashboard</h3>
+            </div>
+            <div class="project-desc">
               <p>This website connects you to the dashboard page of a company called reacthq,
                 this web application is still a work in progress but you can take a look at it
-                The web application was built using reactjs
-              </p>
-              <a href="https://reacthqdashboard.netlify.app/" target="_blank">
-                < />
-              </a>
+                The web application was built using reactjs.</p>
             </div>
-          </div>
-          <div class="work">
-            <img src="Screenshot 2023-04-19 233828.png">
-            <div class="layer">
-              <h3>LandingPage</h3>
-              <p>This connects you to the LandingPage of an IT company , you can checkout the UI by clicking on the link
-                this web application was built using reactjs
-              </p>
-              <a href="https://fadipelandingpage.netlify.app/" target="_blank">
-                < />
-              </a>
+            <div class="project-tech">
+              <span>NextJs</span>
+              <span>ReactJs</span>
+              <span>JavaScript</span>
             </div>
-          </div>
-          <div class="work">
-            <img src="personal2.png">
-            <div class="layer">
-              <h3>kraftlondon</h3>
-              <p>This website connects you to an IT company , built with html,css and javascript
-              </p>
-              <a href="https://kraftlondon.netlify.app/" target="_blank">
-                < />
-              </a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="TechProsNaija.png">
-            <div class="layer">
-              <h3>TechprosNaija</h3>
-              <p>This website connects you to the landingpage of a Tech organization who is set to provide technical and non-technical courses online via a Learning management system
-              </p>
-              <a href="https://techprosnaija.com/" target="_blank">
-                < />
-              </a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="TechProsNaija.png">
-            <div class="layer">
-              <h3>TechprosNaija</h3>
-              <p>This website connects you to the landingpage of a Tech organization who is set to provide technical and non-technical courses online via a Learning management system
-              </p>
-              <a href="https://techprosnaija.com/boot-camp" target="_blank">
-                < />
+            <div class="project-links">
+              <a href="https://reacthqdashboard.netlify.app/" target="_blank" class="demo-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
-      </div>
-    </div>
-
-    <!--contact-->
-
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-right">
-            <form id="myForm">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+         <div class="project-card public">
+          <div class="project-badge">Public Demo</div>
+          <div class="project-image">
+            <img src="shop.png" alt="University Website">
           </div>
-          <div class="contact-left">
-            <h1 class="sub-title2">Contact Me</h1>
-            <p> <img src="inbox.png" class="inbox"> fadipemoyinoluwa2016@gmail.com</p>
-            <p> <img src="phone.png" class="phone"> 07067066224</p>
-            <div class="social-icons">
-              <a href="http://linkedin.com/in/moyinoluwa-fadipe-fad"><img src="ldlogo.jpg"></a>
-              <a href="https://wa.link/9hqe24"><img src="whatsapplogo.jpg"></a>
-              <a href="http://github.com/Benjaminfad"><img src="GitHub.png"></a>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>E-commerce website</h3>
             </div>
-            <a href="https://drive.google.com/file/d/1C36_o6eGuEnLtbZKsxSjA_U3eBOXyx5s/view?usp=drivesdk" download
-              class="btn btn2">Download CV</a>
+            <div class="project-desc">
+              <p>This website connects you to an e-commerce entity named Shopinsideout ,An online Store where you can
+                buy t-shirts of all kinds.
+                The mobile view for this website is currently ongoing construction</p>
+            </div>
+            <div class="project-tech">
+              <span>NextJs</span>
+              <span>ReactJs</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://reacthqdashboard.netlify.app/" target="_blank" class="demo-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+         <div class="project-card public">
+          <div class="project-badge">Public Demo</div>
+            <div class="project-image">
+            <div class="blurred-overlay">
+              <div class="overlay-content">
+                <h3>Harmony</h3>
+                <p>Job Platform</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Harmony</h3>
+            </div>
+            <div class="project-desc">
+              <p>This is a dedicated job site that connect service providers and service seekers together... This MVP is a work in progress</p>
+            </div>
+            <div class="project-tech">
+              <span>NextJs</span>
+              <span>ReactJs</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://harmonyglobal.netlify.app/" target="_blank" class="demo-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © Moyin. All Rights Reserved</p>
+    </div>
+  </div>
+
+  <!-- Technical Support Work -->
+  <div id="support">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Support & System Monitoring</h2>
+        <p class="section-subtitle">Ensuring application reliability and performance</p>
+      </div>
+      
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="support-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Analysis & Monitoring</h3>
+          <p>Using MySQL and Excel to track system performance, user activities, and business metrics.</p>
+          <ul class="support-list">
+            <li>Real-time transaction monitoring</li>
+            <li>User activity analysis reports</li>
+            <li>Performance metric tracking</li>
+            <li>Business intelligence dashboards</li>
+          </ul>
+        </div>
+
+        <div class="support-card">
+          <div class="support-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>System Integration Support</h3>
+          <p>Monitoring and troubleshooting inter-service communications in enterprise systems.</p>
+          <ul class="support-list">
+            <li>Azure Service Bus monitoring</li>
+            <li>API integration troubleshooting</li>
+            <li>Service-to-service communication</li>
+            <li>Error log analysis</li>
+          </ul>
+        </div>
+
+        <div class="support-card">
+          <div class="support-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Customer & Technical Support</h3>
+          <p>Providing Tier 2 support and creating documentation for enterprise applications.</p>
+          <ul class="support-list">
+            <li>Zoho Desk ticketing system</li>
+            <li>95% SLA resolution rate</li>
+            <li>User documentation creation</li>
+            <li>Bug reporting & tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="metrics-showcase">
+        <h3>Support Impact Metrics</h3>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">95%</div>
+            <div class="metric-label">Support Resolution Rate</div>
+            <div class="metric-desc">Within SLA timeframes</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">40%</div>
+            <div class="metric-label">Error Reduction</div>
+            <div class="metric-desc">Through system improvements</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">50+</div>
+            <div class="metric-label">Bugs Identified</div>
+            <div class="metric-desc">And reported to engineering</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">25%</div>
+            <div class="metric-label">Satisfaction Increase</div>
+            <div class="metric-desc">Customer satisfaction scores</div>
+          </div>
+        </div>
+      </div>
+      <!-- AI & Modern Development Section -->
+<div id="ai-workflow">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">AI-Enhanced Development Workflow</h2>
+      <p class="section-subtitle">Leveraging AI tools for accelerated development and problem-solving</p>
+    </div>
+    
+    <div class="ai-grid">
+      <div class="ai-card">
+        <div class="ai-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>AI-Powered Development</h3>
+        <ul class="ai-list">
+          <li>Code generation with ChatGPT/Claude</li>
+          <li>GitHub Copilot for accelerated coding</li>
+          <li>AI-assisted bug detection & solutions</li>
+          <li>Prompt engineering for complex tasks</li>
+        </ul>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3>Documentation & Communication</h3>
+        <ul class="ai-list">
+          <li>AI-generated technical documentation</li>
+          <li>Professional email and report drafting</li>
+          <li>API documentation with AI assistance</li>
+          <li>Client communication templates</li>
+        </ul>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Problem-Solving & Support</h3>
+        <ul class="ai-list">
+          <li>Debugging complex issues with AI</li>
+          <li>AI-assisted research for solutions</li>
+          <li>Generating test cases and scenarios</li>
+          <li>Root cause analysis with AI tools</li>
+        </ul>
       </div>
     </div>
 
+    <div class="ai-impact">
+      <h3><i class="fas fa-chart-line"></i> AI Workflow Impact</h3>
+      <div class="impact-metrics">
+        <div class="impact-metric">
+          <div class="metric-value">40-50%</div>
+          <div class="metric-label">Faster Development</div>
+        </div>
+        <div class="impact-metric">
+          <div class="metric-value">30%</div>
+          <div class="metric-label">Reduced Debugging Time</div>
+        </div>
+        <div class="impact-metric">
+          <div class="metric-value">Consistent</div>
+          <div class="metric-label">Code Quality</div>
+        </div>
+        <div class="impact-metric">
+          <div class="metric-value">Enhanced</div>
+          <div class="metric-label">Documentation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
 
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to Frontend Engineering, Technical Support, or Hybrid Roles</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>fadipemoyinoluwa2016@gmail.com</p>
+              <a href="mailto:fadipemoyinoluwa2016@gmail.com" class="contact-link">Send Email</a>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>+234 706 706 6224</p>
+              <a href="tel:+2347067066224" class="contact-link">Call Now</a>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Lagos, Nigeria</p>
+              <span class="contact-link">Remote & On-site Available</span>
+            </div>
+          </div>
+          
+          <div class="contact-resume">
+            <h3>Download Resume</h3>
+            <a href="https://drive.google.com/file/d/1C36_o6eGuEnLtbZKsxSjA_U3eBOXyx5s/view?usp=drivesdk" target="_blank" class="resume-btn">
+              <i class="fas fa-download"></i> Download Full CV
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="myForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <select name="inquiry_type" required>
+                <option value="" disabled selected>Select Inquiry Type</option>
+                <option value="frontend_role">Frontend Engineering Role</option>
+                <option value="support_role">Technical Support Role</option>
+                <option value="hybrid_role">Hybrid Developer/Support Role</option>
+                <option value="project">Project Collaboration</option>
+                <option value="consultation">Technical Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-message"></div>
+          </form>
+          
+          <div class="social-connect">
+            <h4>Connect with me:</h4>
+            <div class="social-links">
+              <a href="http://linkedin.com/in/moyinoluwa-fadipe-fad" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="http://github.com/Benjaminfad" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://wa.link/9hqe24" target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.moyinoluwafad.netlify.app" target="_blank" class="social-link">
+                <i class="fas fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- PZ Cussons Modal -->
+  <div id="pz-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('pz-modal')">&times;</span>
+      <h2>PZ Cussons Sales Force Automation - Impact Analysis</h2>
+      
+      <div class="modal-body">
+        <div class="impact-overview">
+          <h3><i class="fas fa-chart-line"></i> Project Overview</h3>
+          <p>Enterprise Distribution Management System supporting 500+ field sales representatives across Nigeria's FMCG distribution network.</p>
+        </div>
+        
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-value">₦1.2B+</div>
+            <div class="impact-label">Transactions Processed</div>
+            <div class="impact-desc">Within first two months of deployment</div>
+          </div>
+          
+          <div class="impact-card">
+            <div class="impact-value">40%</div>
+            <div class="impact-label">Manual Error Reduction</div>
+            <div class="impact-desc">Through real-time data synchronization</div>
+          </div>
+          
+          <div class="impact-card">
+            <div class="impact-value">25%</div>
+            <div class="impact-label">Performance Improvement</div>
+            <div class="impact-desc">Reduced application load times</div>
+          </div>
+          
+          <div class="impact-card">
+            <div class="impact-value">50+</div>
+            <div class="impact-label">Distributor Locations</div>
+            <div class="impact-desc">Operational transparency achieved</div>
+          </div>
+        </div>
+        
+        <div class="technical-details">
+          <h3><i class="fas fa-cogs"></i> Technical Implementation</h3>
+          <div class="tech-grid">
+            <div class="tech-area">
+              <h4>Frontend Development</h4>
+              <ul>
+                <li>React with TypeScript for type safety</li>
+                <li>Role-based access control implementation</li>
+                <li>Dynamic UI components for admin workflows</li>
+                <li>React Native for mobile field application</li>
+              </ul>
+            </div>
+            
+            <div class="tech-area">
+              <h4>Support & Monitoring</h4>
+              <ul>
+                <li>MySQL queries for data tracking</li>
+                <li>Azure Service Bus for service communication</li>
+                <li>Excel reporting for business insights</li>
+                <li>Tier 2 technical support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="key-features">
+          <h3><i class="fas fa-star"></i> Key Features Developed</h3>
+          <div class="features-list">
+            <div class="feature">
+              <i class="fas fa-route"></i>
+              <div>
+                <h4>Route Management</h4>
+                <p>Optimized delivery routes for field representatives</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>Customer Management</h4>
+                <p>Centralized customer database with activity tracking</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-chart-pie"></i>
+              <div>
+                <h4>KPI Dashboards</h4>
+                <p>Real-time sales and performance analytics</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-mobile-alt"></i>
+              <div>
+                <h4>Handheld Terminal App</h4>
+                <p>Android application for field data collection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- javascript -->
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#header">Moyinoluwa Fadipe</a>
+          <p>Frontend Engineer & Technical Support Specialist</p>
+          <div class="footer-tags">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Enterprise Support</span>
+          </div>
+        </div>
+        
+        <div class="footer-quick-links">
+          <h4>Quick Links</h4>
+          <a href="#about">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#support">Support Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-envelope"></i> fadipemoyinoluwa2016@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +234 706 706 6224</p>
+          <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moyinoluwa Benjamin Fadipe. All rights reserved.</p>
+        <p class="footer-portfolio">Portfolio: www.moyinoluwafad.netlify.app</p>
+      </div>
+    </div>
+  </footer>
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    // EmailJS initialization
+    (function() {
+      emailjs.init("AqcwFAWOQMHZsaGmS");
+    })();
+
+    // Mobile menu functions
+    const sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+      sidemenu.classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+    
+    function closemenu() {
+      sidemenu.classList.remove("show");
+      document.body.style.overflow = "auto";
+    }
+
+    // Modal functions
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+    
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close modal on outside click
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
         }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-      }
-    </script>
+      });
+    }
 
-    <script>
-
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu() {
-        sidemenu.style.right = "0";
-
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-
-      }
-
-    </script>
-
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-    <script type="text/javascript">      (function () {
-        emailjs.init("AqcwFAWOQMHZsaGmS");
-      })();
-    </script>
-
-
-    <script>
-
-      // listen to the form submission
-      document
-        .getElementById("myForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const serviceID = "service_us46k6q";
-          const templateID = "template_el1r8z8";
-
-          // send the email here
-          emailjs.sendForm(serviceID, templateID, this).then(
-            (response) => {
-              console.log("SUCCESS!", response.status, response.text);
-              alert("SUCCESS!");
-            },
-            (error) => {
-              console.log("FAILED...", error);
-              alert("FAILED...", error);
-            }
-          );
+    // Form submission
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const serviceID = "service_us46k6q";
+      const templateID = "template_el1r8z8";
+      const messageDiv = document.getElementById("form-message");
+      const submitBtn = this.querySelector('.submit-btn');
+      
+      // Show loading state
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+      
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          messageDiv.innerHTML = "Message sent successfully! I'll get back to you soon.";
+          messageDiv.className = "success";
+          document.getElementById("myForm").reset();
+          setTimeout(() => {
+            messageDiv.innerHTML = "";
+          }, 5000);
+        })
+        .catch(error => {
+          console.error("FAILED...", error);
+          messageDiv.innerHTML = "Failed to send message. Please email me directly.";
+          messageDiv.className = "error";
+        })
+        .finally(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
         });
-    </script>
+    });
 
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          if (window.innerWidth <= 768) {
+            closemenu();
+          }
+        }
+      });
+    });
 
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements
+    document.querySelectorAll('.project-card, .timeline-item, .support-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Add active class to nav links on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPos = window.scrollY + 100;
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
