@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[build.image]
+  image = "ubuntu-noble"
